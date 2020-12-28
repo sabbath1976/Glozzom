@@ -1,4 +1,10 @@
+$color-black: rgb(0, 0, 0);
+
 .navbar {
+    .nav-item.active {
+        border-left: 3px solid #444;
+    }
+
     .nav-link {
         text-transform: uppercase;
         font-size: 14px;
@@ -31,5 +37,22 @@
     .carousel-img-3 {
         background-image: url(../img/image3.jpg);
         background-size: cover;
+    }
+}
+
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background-image: url(../img/lights.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .dark-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-black, 0.7);
     }
 }
