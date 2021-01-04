@@ -1,0 +1,15 @@
+#main-nav {
+    .nav-item {
+        &:not(:last-child) {
+            margin-right: 1rem;
+
+            @media only screen and (min-width: 576px) and (max-width: 768px) {
+                margin-right: 0.5rem;
+            }
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 768px) {
+            font-size: 0.9rem;
+        }
+    }
+}
