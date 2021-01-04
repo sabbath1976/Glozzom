@@ -13,3 +13,26 @@
         }
     }
 }
+
+#showcase {
+    .carousel-item {
+        min-height: 450px;
+    }
+
+    .carousel-img {
+        &-1 {
+            background-image: url(../img/image1.jpg);
+            background-size: cover;
+        }
+
+        &-2 {
+            background-image: url(../img/image2.jpg);
+            background-size: cover;
+        }
+
+        &-3 {
+            background-image: url(../img/image3.jpg);
+            background-size: cover;
+        }
+    }
+}
