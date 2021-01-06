@@ -1,10 +1,18 @@
 $color-black: rgb(0, 0, 0);
+$color-grey-light: #efefef;
 
 @mixin parallax {
     position: relative;
     min-height: 200px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navbar {
@@ -68,11 +76,24 @@ $color-black: rgb(0, 0, 0);
     background-image: url(../img/media.jpg);
 
     a {
-        color: #efefef;
+        color: $color-grey-light;
     }
 }
 
 #main-footer {
     background-color: $color-black;
-    color: #efefef;
+    color: $color-grey-light;
+}
+
+#page-header {
+    @include parallax;
+
+    background-image: url(../img/image1.jpg);
+    background-position: 0 -360px;
+}
+
+#about {
+    .about-img {
+        margin-top: -50px;
+    }
 }
