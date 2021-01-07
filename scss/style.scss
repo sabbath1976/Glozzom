@@ -7,6 +7,13 @@ $color-black: #000;
     transform: translate(-50%, -50%);
 }
 
+@mixin parallax {
+    position: relative;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .center {
     @include absCenter;
 }
@@ -60,22 +67,33 @@ $color-black: #000;
 }
 
 #home-heading {
-    position: relative;
-    min-height: 200px;
+    @include parallax;
     background-image: url(../img/lights.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 #video-play {
-    position: relative;
-    min-height: 200px;
+    @include parallax;
     background-image: url(../img/media.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: 0 -300px;
 }
 
 #newsletter {
+    background-color: #343a40;
+}
+
+#page-header {
+    @include parallax;
+    background-image: url(../img/image1.jpg);
+    background-position: 0 -360px;
+}
+
+#about {
+    .img-about {
+        margin-top: -50px;
+        position: relative;
+    }
+}
+
+#testimonials {
     background-color: #343a40;
 }
