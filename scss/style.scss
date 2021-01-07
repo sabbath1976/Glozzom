@@ -97,3 +97,19 @@ $color-grey-light: #efefef;
         margin-top: -50px;
     }
 }
+
+#faq {
+    .card {
+        border: #444;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .card-header,
+    .card-body {
+        background-color: #333;
+    }
+}
